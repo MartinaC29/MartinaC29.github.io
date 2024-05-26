@@ -1,14 +1,153 @@
-#titulo{
-    background-color: burlywood;
-    text-align: center;
-}
-#botones{
-    text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
 }
 
-#bienvenida{
-    text-align: center;
+body{
     
+    background-color: #DCD9D4;
+    background-image: url(img/portada.jpg);
+    background-blend-mode: soft-light,screen;
+    width: 100%;
+    height: 100vh;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
 
+.titulo_menu{
+    color: black;
+    font-size: 45px;
+}
+.titulo_menu:hover{
+    color: blanchedalmond;
+    font-size: 45px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+a:hover{
+    color: blanchedalmond;
+    font-size: 25px;
+}
+
+.carrousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrouselImg{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+.carrouselImg img{
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+
+}
+    
+
+
+
+
+/*.carousel img {
+    max-width: 90%;
+    height: auto;
+}*/
+
+#prev,#next{
+    border-radius: 30px;
+    background-color: #ffffff;
+    position: absolute; 
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align:center;
+    border: 0;
+    cursor: pointer;
+}
+
+#prev:focus{
+    outline: 0;
+}
+#next:focus{
+    outline: 0;
+}
+#prev svg{
+    width: 12px;
+    height: 100%;
+}
+#next svg{
+    width: 12px;
+    height: 100%;
+}
+#prev{
+    left: 60px; 
+}
+#next{
+    right: 60px;
+}
+
+.newsletter {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.newsletter h2 {
+    text-align: center;
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+#newsletter-salida {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer .contact-info, footer .social-media {
+    flex: 1;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}

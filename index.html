@@ -8,60 +8,63 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="hero">
-            <nav class="container">
-                <div class="naveg_logo">
-                    <h2 class="naveg__title">BLEND BEANS</h2>
-                </div>
-            </nav>
-            <ul class="naveg__link naveg__link--menu">
-                <li class="naveg__items">
-                    <a href="#" class="naveg__links">INICIO</a>
-                </li>
-                <li class="naveg__items">
-                    <a href="#" class="naveg__links">CAFÉ</a>
-                </li>
-                <li class="naveg__items">
-                    <a href="#" class="naveg__links">CONTACTO</a>
-                </li>
-
-                <img src="img/x-circle.svg" class="naveg__close">
+        <header>
+           <nav>
+            <h1 class="titulo_menu"><img src="img/coffeeMenu.svg" width="35px" height="35px"> BLEND BEANS</h1>
+            <ul>
+                <li><a href="index.html" target="_self">INICIO</a></li>
+                <li><a href="Cafe.html" target="_self">CAFÉ</a></li>
+                <li><a href="Contacto.html" target="_self">CONTACTO</a></li>
             </ul>
+           </nav>
+         </header>
 
-            <div class="naveg__menu">
-                <img src="img/logo_menu.svg" class="naveg__img">
+           <main>
+            <div class="carrousel">
+                <button id="prev">
+                    <img src="img/arrowleft.svg">
+                </button>
+                <div class="carrouselImg">
+                    <img id="carrouselImg" src="img/Carrousel/">
+                </div>
+                <button id="next">
+                    <img src="img/arrowright.svg">
+                </button>    
             </div>
+           </main>
 
-            <section class="hero_container container">
-                <h1 class="hero_title"> Bienvenidos Al Mundo Del Café </h1>
-                
-            </section>
+           <section class="newsletter">
+            <h2>Suscríbete a nuestro Newsletter</h2>
+            <form id="newsletter-form">
+                <label for="first-name">Nombre:</label>
+                <input type="text" id="first-name" name="first-name" required minlength="2" maxlength="30">
+                <label for="last-name">Apellido:</label>
+                <input type="text" id="last-name" name="last-name" required minlength="2" maxlength="30">
+                <label for="email-newsletter">Correo electrónico:</label>
+                <input type="email" id="email-newsletter" name="email-newsletter" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+            <div id="newsletter-salida"></div>
+           </section>
 
-        </header>
+           <footer>
+            <div class="contact-info">
+                <h3>Contacto</h3>
+                <p>Teléfono: +54 266 400 2198</p>
+                <p>Correo electrónico: info@blendbeans.com</p>
+            </div>
+            <div class="social-media">
+                <h3>Síguenos en: </h3>
+                <p>
+                    <a href="https://facebook.com"><img src="img/facebook.svg"></a> |
+                    <a href="https://twitter.com"><img src="img/twitter.svg"></a> |
+                    <a href="https://instagram.com"><img src="img/insta.svg"></a>
+                </p>
+            </div>
+          </footer>
 
 
-
-
-
-    <!--<h1 id="titulo"> BLEND BEANS </h1>
-        <h4 id="botones"> INICIO 
-            CAFÉ
-            CONTACTO
-        </h4>
-        <br>
-        <br>
-        <h1 id="bienvenida">
-            BIENVENIDOS 
-            <br>
-            AL 
-            <br>
-            MUNDO 
-            <br> 
-            DEL CAFÉ
-
-        </h1>-->
-
-
-        
+    <script src="script.js"></script>
+       
     </body>
 </html>
