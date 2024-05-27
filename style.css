@@ -32,9 +32,18 @@ nav{
     font-size: 45px;
 }
 
-ul li{
-    display: inline-block;
+nav ul{
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 20px;
     padding: 0px 20px;
+}
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 10px;
 }
 
 a{
@@ -55,9 +64,10 @@ a:hover{
     overflow: hidden;
 }
 
-#carrouselImg {
+#imagenes{
     max-width: 80%;
     height: auto;
+    overflow: hidden;
 }
     
 .button{
@@ -141,26 +151,55 @@ footer {
     background-color: #333;
     color: white;
     padding: 20px;
+    padding-top: 2%;
 }
 
 footer .contact-info, footer .social-media {
     flex: 1;
 }
-
+.soci h3{
+    padding-bottom: 2%;
+}
 footer .social-media a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
 }
 
-.cafeSeccion{
+.cafeSeccion{ 
     align-items: center;
     display: inline-block;
     padding: 0px 20px;
     padding-top: 3.5%;
-    padding-left: 35%;
+    padding-left: 34%;
     /*padding-right: 5%;*/
     font-weight: bold;
+    font-size: 22px;
+}
+
+.cafeSeccion #historia{
+    color: black;
+    background: hsl(30, 1%, 64%);
+    width: 107px;
+    display: inline-flexbox;
+    padding: 6px 2px;
+    text-align: center;
+}
+.cafeSeccion #granos{
+    color: black;
+    background: hsl(30, 1%, 64%);
+    width: 90px;
+    display: inline-flexbox;;
+    padding: 6px 2px;
+    text-align: center;
+}
+.cafeSeccion #cafe{
+    color: black;
+    background: hsl(30, 1%, 64%);
+    width: 118px;
+    display: inline-flexbox;;
+    padding: 6px 2px;
+    text-align: center;
 }
 
 .tituloHistoria{
@@ -169,6 +208,7 @@ footer .social-media a {
     font-size: 25px;
     padding-top: 5%;
     padding-bottom: 5%;
+    display: block;
 }
 
 .tituloGranos{

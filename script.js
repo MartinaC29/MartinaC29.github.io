@@ -9,7 +9,7 @@
   let posActual = 0;
   
 
-  const carrouselImagen = document.getElementById('carrouselImg');
+  const carrouselImagen = document.getElementById('imagenes');
   const botonAnt = document.querySelector('prev');
   const botonSig = document.querySelector('next');
 
