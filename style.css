@@ -4,8 +4,7 @@
     font-family:'Courier New', Courier, monospace;
 }
 
-body{
-    
+body{  
     background-color: #DCD9D4;
     background-image: url(img/portada.jpg);
     background-blend-mode: soft-light,screen;
@@ -152,4 +151,38 @@ footer .social-media a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
+}
+
+.cafeSeccion{
+    align-items: center;
+    display: inline-block;
+    padding: 0px 20px;
+    padding-top: 3.5%;
+    padding-left: 35%;
+    /*padding-right: 5%;*/
+    font-weight: bold;
+}
+
+.tituloHistoria{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.tituloGranos{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.tituloCafetera{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
