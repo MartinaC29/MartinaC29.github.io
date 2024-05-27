@@ -27,6 +27,7 @@ nav{
     color: black;
     font-size: 45px;
 }
+
 .titulo_menu:hover{
     color: blanchedalmond;
     font-size: 45px;
@@ -51,30 +52,16 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.carrouselImg{
-    width: 400px;
-    height: 300px;
+    margin: 20px;
     overflow: hidden;
 }
-.carrouselImg img{
-    width: 90%;
-    height: auto;
-    object-fit: cover;
 
+#carrouselImg {
+    max-width: 80%;
+    height: auto;
 }
     
-
-
-
-
-/*.carousel img {
-    max-width: 90%;
-    height: auto;
-}*/
-
-#prev,#next{
+.button{
     border-radius: 30px;
     background-color: #ffffff;
     position: absolute; 
@@ -85,6 +72,21 @@ a:hover{
     border: 0;
     cursor: pointer;
 }
+.button:hover{
+    background-color: #918f86;
+}
+
+/*#prev,#next{
+    border-radius: 30px;
+    background-color: #ffffff;
+    position: absolute; 
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align:center;
+    border: 0;
+    cursor: pointer;
+}*/
 
 #prev:focus{
     outline: 0;
