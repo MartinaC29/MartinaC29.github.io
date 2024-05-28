@@ -1,17 +1,17 @@
 //carrousel script.
   const imagenes = [
-     'img/Carrousel/BIENVENIDOS.png',
-     'img/Carrousel/Tostado.png',
-     'img/Carrousel/CAFETERAS.png',
-     'img/Carrousel/coffe3.png'
+     [img/Carrousel/BIENVENIDOS.png],
+     [img/Carrousel/Tostado.png],
+     [img/Carrousel/CAFETERAS.png],
+     [img/Carrousel/coffe3.png]
   ];
 
   let posActual = 0;
   
 
-  const carrouselImagen = document.getElementById('imagenes');
-  const botonAnt = document.querySelector('prev');
-  const botonSig = document.querySelector('next');
+  const carrouselImagen = document.getElementById(imagenes);
+  const botonAnt = document.querySelector(prev);
+  const botonSig = document.querySelector(next);
 
   function mostrarImagen(posActual){
     carrouselImagen.src = imagenes(posActual);
@@ -44,7 +44,12 @@
    imagenSiguiente();
   }); 
 
+  mostrarImagen(posActual);
 
-  mostrarImagen(Aindex);
+  
+  
+
+
+
 
 

@@ -46,12 +46,12 @@ nav li{
     padding: 0px 10px;
 }
 
-a{
+.menu a{
     color: black;
     text-decoration: none;
     font-size: 25px;
 }
-a:hover{
+.menu a:hover{
     color: blanchedalmond;
     font-size: 25px;
 }
@@ -119,7 +119,7 @@ a:hover{
 }
 
 .newsletter {
-    background-color: #fff;
+    background-color:#918f86;
     padding: 20px;
     margin: 20px;
     border: 1px solid #ccc;
@@ -129,21 +129,74 @@ a:hover{
 .newsletter h2 {
     text-align: center;
 }
+.newsletter #botn{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.newsletter #botn a{
+    color: black;
+    text-decoration: none;
+}
+.newsletter #botn a:hover{
+    color: blanchedalmond;
+    font-size: 30px;
+}
 
 #newsletter-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 20px;
+    align-items: center;
 }
 
-#newsletter-salida {
-    margin-top: 20px;
+/*#newsletter-salida {
+    width: 700px;
+    margin-top: 10px;
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    margin-left: 24%;
+}*/
+
+.form button{
+    padding: 5px 10px;
+    font-size: 20px;
+    align-self: center;
+    border-radius: 8px;
+    margin-top: 8%;
+    border: none;
 }
+.form button:hover{
+    background-color:slategrey;
+}
+
+form .grupo label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 6%;
+    
+}
+
+form .grupo input{
+    padding: 5px 10px;
+    text-align: left;
+    margin-bottom: 6%;
+    border-radius: 3px;
+    border: none;
+}
+
+.error{
+    color: red;
+}
+.success{
+    color: green;
+}
+
 
 footer {
     display: flex;
@@ -152,6 +205,16 @@ footer {
     color: white;
     padding: 20px;
     padding-top: 2%;
+}
+
+.fNews {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    padding-top: 2%;
+    margin-bottom: 4px;
 }
 
 footer .contact-info, footer .social-media {
@@ -174,7 +237,16 @@ footer .social-media a {
     padding-left: 34%;
     /*padding-right: 5%;*/
     font-weight: bold;
-    font-size: 22px;
+}
+
+.cafeSeccion a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.cafeSeccion a:hover{
+    color: blanchedalmond;
+    font-size: 20px;
 }
 
 .cafeSeccion #historia{
@@ -184,14 +256,16 @@ footer .social-media a {
     display: inline-flexbox;
     padding: 6px 2px;
     text-align: center;
+    border-radius: 5px;
 }
 .cafeSeccion #granos{
     color: black;
     background: hsl(30, 1%, 64%);
     width: 90px;
-    display: inline-flexbox;;
+    display: inline-flexbox;
     padding: 6px 2px;
     text-align: center;
+    border-radius: 5px;
 }
 .cafeSeccion #cafe{
     color: black;
@@ -200,6 +274,7 @@ footer .social-media a {
     display: inline-flexbox;;
     padding: 6px 2px;
     text-align: center;
+    border-radius: 5px;
 }
 
 .tituloHistoria{
@@ -207,7 +282,7 @@ footer .social-media a {
     color: black;
     font-size: 25px;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 0%;
     display: block;
 }
 
@@ -216,13 +291,72 @@ footer .social-media a {
     color: black;
     font-size: 25px;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 0%;
 }
 
 .tituloCafetera{
     text-align: center;
     color: black;
     font-size: 25px;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 3%;
+    padding-bottom: 0%;
+}
+
+.contenido{
+    width: 99%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenido1{
+    width: 99%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenido img{
+    padding-left: 2%;
+    width: 400px;
+    height: 400px;
+}
+.contenido1 img{
+    padding-left: 2%;
+    width: 350px;
+    height: 350px;
+}
+
+.contenido div{
+    width: 55%;
+}
+.contenido1 div{
+    width: 50%;
+}
+
+.contenido h2{
+    font-weight: 300;
+    text-align:left ;
+    line-height: 30px;
+    padding-top: 2%;
+    padding-left: 3%;
+}
+.contenido1 h2{
+    font-weight: 300;
+    text-align:left ;
+    line-height: 30px;
+    padding-top: 2%;
+    padding-bottom: 0;
+    padding-left: 3%;
+}
+
+#espresso{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-left: 40%;
+    padding-right: 20%;
+    padding-bottom: 10%;
+    padding-top: 0;
 }
