@@ -65,9 +65,11 @@ nav li{
 }
 
 #imagenes{
+    width: 1080px;
     max-width: 80%;
-    height: auto;
-    overflow: hidden;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
 }
     
 .button{
@@ -118,29 +120,31 @@ nav li{
     right: 60px;
 }
 
-.newsletter {
+.Inicio_newsletter {
     background-color:#918f86;
     padding: 20px;
-    margin: 20px;
+    margin: 30px;
+    margin-bottom: 10%;
     border: 1px solid #ccc;
     border-radius: 10px;
+    padding-bottom: 2%;
 }
 
-.newsletter h2 {
+.Inicio_newsletter h2 {
     text-align: center;
 }
-.newsletter #botn{
+.Inicio_newsletter #botn{
     color: black;
     text-align: center;
     text-decoration: none;
     font-size: 30px;
 }
 
-.newsletter #botn a{
+.Inicio_newsletter #botn a{
     color: black;
     text-decoration: none;
 }
-.newsletter #botn a:hover{
+.Inicio_newsletter #botn a:hover{
     color: blanchedalmond;
     font-size: 30px;
 }
@@ -152,6 +156,22 @@ nav li{
     padding: 20px;
     align-items: center;
 }
+
+form .error{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.error::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+}
+
+
 
 /*#newsletter-salida {
     width: 700px;
@@ -188,15 +208,8 @@ form .grupo input{
     margin-bottom: 6%;
     border-radius: 3px;
     border: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-.error{
-    color: red;
-}
-.success{
-    color: green;
-}
-
 
 footer {
     display: flex;

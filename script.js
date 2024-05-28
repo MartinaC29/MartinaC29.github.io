@@ -1,50 +1,59 @@
-//carrousel script.
+//carrousel script
+
   const imagenes = [
-     [img/Carrousel/BIENVENIDOS.png],
-     [img/Carrousel/Tostado.png],
-     [img/Carrousel/CAFETERAS.png],
-     [img/Carrousel/coffe3.png]
+     'img/Carrousel/BIENVENIDOS.png',
+     'img/Carrousel/Tostado.png',
+     'img/Carrousel/CAFETERAS.png',
+     'img/Carrousel/coffe3.png'
   ];
 
   let posActual = 0;
-  
+  let botonAnt = document.querySelector('#prev');
+  let botonSig = document.querySelector('#next');
+  let image = document.querySelector('#imagenes');
 
-  const carrouselImagen = document.getElementById(imagenes);
-  const botonAnt = document.querySelector(prev);
-  const botonSig = document.querySelector(next);
+  let intervalo;
 
-  function mostrarImagen(posActual){
-    carrouselImagen.src = imagenes(posActual);
+  function pasarImagen(){
+    if(posActual >= imagenes.length - 1){
+        posActual = 0;
+    }else{
+        posActual++;
+    }
+    renderImagen();
   }
 
-  function imagenAnterior(){
-    if (posicionActual <= 0) {
-        posicionActual = imagenes.length - 1;
-      } else {
-        posicionActual--;
-      }
-      mostrarImagen(posActual);
+  function retrocederImagen(){
+    if(posActual <= 0){
+        posActual = imagenes.length - 1;
+    }else{
+        posActual--;
     }
+    renderImagen();
+  }
+
+  function renderImagen(){
+    image.style.backgroundImage = `url(${imagenes[posActual]})`;
+    image.style.backgroundSize = 'cover'; 
+    image.style.backgroundPosition = 'center';
+   
+  }
+
+  botonSig.addEventListener('click', () =>{
+    pasarImagen();
+  });
+
+  botonAnt.addEventListener('click', () =>{
+    retrocederImagen();
+
+  });
+
+  renderImagen();
+
+ 
   
 
-  function imagenSiguiente(){
-    if (posicionActual >= imagenes.length - 1) {
-        posicionActual = 0;
-      } else {
-        posicionActual++;
-      }
-      mostrarImagen(posActual);
-    }
 
-  botonAnt.addEventListener('click', () => {
-    imagenAnterior();
-  });  
-
-  botonSig.addEventListener('click', () => { 
-   imagenSiguiente();
-  }); 
-
-  mostrarImagen(posActual);
 
   
   
