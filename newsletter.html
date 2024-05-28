@@ -6,7 +6,7 @@
         <title> BIENVENIDOS CAFETEROS | BLEND BEANS</title>
         <link rel="shortcut icon" href="./img/bean.svg" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
-        <link rel="js" href="newsletter.js">
+        <!--<script src="newsletter.js"></script>-->
     </head>
     <body>
         <header>
@@ -20,24 +20,27 @@
             </nav>
           </header>
 
+
+        
         <section class="newsletter">
             <h2>Suscríbete a nuestro Newsletter</h2>
             <form action= " " id="newsletter-form">
                 <div class="form">
                     <div class="grupo">
-                        <label for="">Nombre</label> <br>
+                        <label for="nombre">Nombre</label> <br>
                         <input type="text" id="nombre" name="" required minlength="3" maxlength="30"><span class="error"></span>
                     </div>
                     <div class="grupo">
-                        <label for="">Apellido</label> <br>
+                        <label for="apellido">Apellido</label> <br>
                         <input type="text" id="apellido" name="" required minlength="3" maxlength="30"><span class="error"></span>
                     </div>
                     <div class="grupo">
-                        <label for="">Correo electrónico</label> <br>
+                        <label for="email">Correo electrónico</label> <br>
                         <input type="email" id="email" name="" required><span class="error"></span>
                     </div>
                     <button type="submit">Suscribirse</button>
                 </div>
+                <div id="mensajes"></div>
             </form>
             <!-- <div id="newsletter-salida"></div> -->
            </section>

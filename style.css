@@ -149,6 +149,22 @@ nav li{
     font-size: 30px;
 }
 
+.newsletter {
+    background-color:#918f86;
+    padding: 20px;
+    margin: 30px;
+    margin-bottom: 10%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-bottom: 2%;
+}
+
+.newsletter h2 {
+    text-align: center;
+}
+
+
+
 #newsletter-form {
     display: flex;
     flex-direction: column;
@@ -171,6 +187,14 @@ form .error{
     position: absolute;
 }
 
+#mensajes{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+}
 
 
 /*#newsletter-salida {
