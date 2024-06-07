@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: #b6b4ab;
+    background-image: url(img/portada.jpg);
+    background-blend-mode: soft-light,screen;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Estilo de header */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+
+.titulo_menu{
+    color: black;
+    font-size: 45px;
+}
+
+.titulo_menu:hover{
+    color: blanchedalmond;
+    font-size: 45px;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 20px;
+    padding: 0px 20px;
+}
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+.menu a:hover{
+    color: blanchedalmond;
+    font-size: 25px;
+}
+/* Estilo de header */
+
+main{
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+
+.titulo-news{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+.newsletter-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form_label{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.g_form-input{
+    position: relative;
+}
+
+.form_input{
+    width: 75%;
+    background: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 50px 0 10px;
+    transition: .3s ease all;
+    font-weight: 400;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form_input:focus{
+    border: 3px solid #2e88dd;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.3);
+}
+
+.error-form{
+    font-size: 13px;
+    margin-bottom: 0;
+    display: none;
+    font-weight: 600;
+    margin-top: 4px;
+}
+.error-form-activo{
+    display: block;
+}
+
+.error-icon{
+    position: absolute;
+    right: 40px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+} 
+
+.form_box{
+    margin-right: 10px;
+}
+
+.form_terminos, .error_mensaje, .form_boton{
+    grid-column: span 2;
+}
+
+.error_mensaje{
+    height: 45px;
+    line-height: 45px;
+    background: #f66060;
+    margin-right: 175px;
+    padding: 0 15px;
+    border-radius: 3px;  
+    display: none;
+}
+.error_mensaje-activo{
+    display: block;
+}
+
+.error_mensaje p {
+    margin: 0;
+    font-weight: 550;
+}
+
+.form_boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_button{
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: black;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+    margin-bottom: 7px;
+    margin-top: 15px;
+}
+.form_button:hover{
+    box-shadow: 3px 0px 30px rgba(234, 243, 201,1);
+}
+
+.form_mensaje{
+    margin-top: 7px;
+    font-size: 20px;
+    color: #33841f;
+    font-weight: bold;
+    display: none;
+}
+.form_mensaje-activo{
+    display: block;
+}
+
+/* Estilos validacion */
+
+.g_form-correcto .error-icon{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.g_form-incorrecto .form_label{
+    color: #bb2929;
+
+}
+.g_form-incorrecto .error-icon{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.g_form-incorrecto .form_input{
+    border: 3px solid #bb2929;
+    
+}
+
+/* Estilo de footer*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    padding-top: 2%;
+}
+
+.fNews {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    padding-top: 2%;
+    margin-bottom: 4px;
+}
+
+footer .contact-info, footer .social-media {
+    flex: 1;
+}
+.soci h3{
+    padding-bottom: 2%;
+}
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
